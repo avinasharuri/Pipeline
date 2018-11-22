@@ -1,12 +1,14 @@
 pipeline {
-	agent any {
+	agent any 
 		stages {
 			stage ("build") {
 				steps {
+				git "https://github.com/punnaashok/repo5.git"
+				sh "mvn validate"
 				echo "This is Avinash"	
 					}
 					}
 			}
-		}
+		
 	}
 
